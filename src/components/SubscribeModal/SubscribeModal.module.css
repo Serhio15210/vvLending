@@ -1,0 +1,78 @@
+.modal{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: linear-gradient(35deg, rgba(85, 60, 117, 0.78) 0%, rgba(92, 142, 170, 0.00) 100%);
+    backdrop-filter: blur(46.5px);
+}
+.title{
+    color: #FFF;
+    text-align: center;
+    font-size: 38px;
+    font-family: Rock Star;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+.text{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 20px;
+
+    text-transform: uppercase;
+}
+.close{
+    position: absolute;
+    right: 30px;
+    top:20px;
+    cursor: pointer;
+}
+.modal input{
+    color: #FFF;
+    border: none;
+    font-size: 13px;
+    font-family: Montserrat;
+    padding: 11px 15px;
+    border-radius: 42px;
+    max-width: 385px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: rgba(18, 35, 72, 0.60);
+}
+.modal input::placeholder{
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 13px;
+    font-family: Montserrat;
+    line-height: 20px;
+    text-transform: uppercase;
+     ;
+}
+.modal .button{
+    width: max-content;
+}
+
+@media screen and (max-width: 500px){
+    .modal{
+        padding: 40px 25px;
+    }
+    .modal .title{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .modal .text{
+        font-size: 14px;
+    }
+    .close{
+
+        top: 10px;
+        right: 16px;
+    }
+
+}

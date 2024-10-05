@@ -1,0 +1,376 @@
+@property --buttonBgStart {
+  syntax: "<color>";
+  initial-value: #ea008c;
+  inherits: false;
+}
+
+@property --buttonBgEnd {
+  syntax: "<color>";
+  initial-value: #ad00b0;
+  inherits: false;
+}
+
+.mainContainer {
+  max-width: 1180px;
+  /*width: 100%;*/
+  margin: auto;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  padding: 0 20px;
+  /*margin-top: 80px;*/
+}
+
+.mainLogo {
+  position: relative;
+  margin-left: -140px;
+  z-index: 0;
+}
+
+.robot {
+  position: relative;
+  object-fit: fill;
+  z-index: 2;
+}
+
+.neonText {
+  position: absolute;
+  margin: -615px 0 0 -225px;
+  background: red;
+}
+
+.neonText img {
+  position: absolute;
+  object-fit: contain;
+  top:0;
+
+  z-index: 1;
+}
+
+.tryFreeBtn {
+  display: none;
+
+  width: 180px;
+  height: 45px;
+
+  font-weight: 600;
+
+  border-radius: 59px;
+  border-width: 0px;
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.5s;
+  cursor: pointer;
+
+  background: linear-gradient(
+    86.9deg,
+    var(--buttonBgStart),
+    var(--buttonBgEnd)
+  );
+  transition: --buttonBgStart 1.5s, --buttonBgEnd 1.5s;
+}
+.tryFreeBtn:hover {
+  --buttonBgStart: #ad00b0;
+  --buttonBgEnd: #ea008c;
+}
+
+.contacts {
+  /*position: relative;*/
+  /*top: 930px;*/
+  margin-top: 320px;
+  /*margin-bottom: 24px;*/
+  width: 100%;
+
+  /*height: 614px;*/
+  background: rgba(20, 122, 158, 0.1);
+  z-index: 1;
+  border: 1px solid #ffffff49;
+  backdrop-filter: blur(46.5px);
+  border-radius: 20px;
+  text-align: center;
+  padding: 97px 0;
+}
+
+.contactsTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 87px;
+  /*margin: 97px 295px 87px 295px;*/
+}
+.contactsTitle h1 {
+  display: inline-block;
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.contactsTitle div {
+  border: 0.25px solid rgba(255, 255, 255, 0.397);
+  width: 44px;
+  margin: 0 44px;
+}
+
+.contacts ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 65px;
+
+}
+
+.contacts ul li a {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contactIcon {
+  height: 33px;
+  margin-bottom: 21px;
+}
+
+.download {
+  margin-top: 93px;
+}
+.download h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 20px;
+  margin: 0;
+}
+.download p {
+  margin: 0;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.storeIcons {
+  margin-top: 20px;
+}
+.storeIcon {
+  margin-left: 12px;
+}
+
+@media (max-width: 1200px) {
+  .mainContainer {
+    margin-top: 150px;
+  }
+  .contacts{
+    /*width: calc(100% - 100px)*/
+  }
+  /*.mainLogo {*/
+  /*  margin-left: 320px;*/
+  /*}*/
+  .robot img {
+    width: 700px;
+    margin: -85px 0 0 70px;
+  }
+  .neonText img {
+    width: 1800px;
+    margin: 50px 0 0 20px;
+  }
+
+}
+@media (max-width: 1080px) {
+  .neonText img {
+    width: 1700px;
+    margin: 80px 0 0 40px;
+  }
+}
+@media (max-width: 1030px) {
+  .robot img {
+    width: 650px;
+  }
+  .neonText img {
+    margin: 80px 0 0 15px;
+  }
+}
+@media (max-width: 990px) {
+  .robot img {
+    width: 650px;
+    margin: -85px 0 0 70px;
+  }
+  .neonText img {
+    width: 1550px;
+    margin: 125px 0 0 50px;
+  }
+  .contacts{
+    margin-top: 270px;
+  }
+}
+@media (max-width: 900px) {
+  .neonText img {
+    width: 1450px;
+    margin: 155px 0 0 80px;
+  }
+}
+@media (max-width: 870px) {
+  .robot img {
+    width: 600px;
+    margin: -85px 0 0 70px;
+  }
+  .neonText img {
+    width: 1400px;
+    margin: 165px 0 0 80px;
+  }
+  .contacts{
+    margin-top: 240px;
+  }
+}
+@media (max-width: 830px) {
+  .robot img {
+    width: 550px;
+  }
+  .neonText img {
+    width: 1350px;
+    margin: 185px 0 0 80px;
+  }
+
+}
+@media (max-width: 780px) {
+  .mainContainer{
+    margin-top: 100px;
+  }
+  .tryFreeBtn {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin: 240px auto auto;
+  }
+  .contacts{
+    margin-top: 50px;
+  }
+
+  .neonText img {
+    width: 1200px;
+    margin: 235px 0 0 120px;
+  }
+}
+@media (max-width: 550px) {
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*gap: 60px;*/
+    padding: 50px 20px;
+    max-width: 425px;
+    width: 100%;
+
+  }
+  .contactsTitle{
+    /*margin: 0;*/
+    margin-bottom: 68px;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  .contactsTitle h1{
+    font-size: 32px;
+  }
+  /*.contacts ul img{*/
+  /*  width: 44px;*/
+  /*  height: 44px;*/
+  /*}*/
+  .download{
+    margin-top: 60px;
+  }
+  .download h2{
+    font-size: 22px;
+  }
+
+  .download p{
+    font-size: 12px;
+  }
+  .contactsTitle div{
+    margin: 0;
+  }
+  .contacts ul{
+    flex-direction: column;
+    margin-left: 0;
+    gap: 35px;
+  }
+  .storeIcons{
+    margin-top: 0;
+  }
+  .storeIcon img{
+    width: 130px;
+    height: 39px;
+  }
+}
+@media (max-width: 430px) {
+  .robot img {
+    width: 350px;
+    margin: -85px 0 0 120px;
+  }
+  .neonText img {
+    width: 650px;
+    margin: 405px 0 0 255px;
+  }
+   .mainContainer{
+     padding: 0;
+   }
+  .contacts{
+    border-radius: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    padding-top: 55px;
+  }
+  .tryFreeBtn {
+    margin: 150px auto auto;
+    width: calc(100% - 40px);
+  }
+}
+@media (max-width: 376px) {
+  .mainContainer{
+    margin-top: 80px;
+  }
+  .robot img {
+    width: 310px;
+    margin: -100px 0 0 115px;
+  }
+  .neonText img {
+    width: 570px;
+    margin: 430px 0 0 270px;
+  }
+  .tryFreeBtn {
+    margin: 122px auto auto;
+  }
+}
+@media (max-width: 325px) {
+  .robot img {
+    width: 280px;
+    margin: -100px 0 0 110px;
+  }
+  .neonText img {
+    width: 485px;
+    margin: 460px 0 0 280px;
+  }
+  .tryFreeBtn {
+    margin: 110px auto auto;
+  }
+}
+@media (max-width: 280px) {
+  .mainContainer{
+    margin-top: 80px;
+  }
+  .robot img {
+    width: 230px;
+    margin: -150px 0 0 130px;
+  }
+  .neonText img {
+    width: 430px;
+    margin: 475px 0 0 285px;
+  }
+  .tryFreeBtn {
+    margin: 90px auto auto;
+  }
+}

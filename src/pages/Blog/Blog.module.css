@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1185px;
+    width: 100%;
+    margin: auto;
+    padding-top: 87px;
+}
+.title{
+    color: #FFF;
+    font-size: 46px;
+    font-family: Rock Star;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.buttonMore{
+    width: max-content;
+    margin: 60px auto 80px;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 87px 20px 0 20px;
+    }
+
+}
+@media screen and (max-width: 780px) {
+    .container {
+        padding: 37px 20px 0 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .blogContent{
+        gap: 20px;
+    }
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .buttonMore{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1185px;
+    width: 100%;
+    margin: auto;
+    padding-top: 87px;
+}
+.title {
+    font-family: "Rock Star";
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+.text {
+    color: #FFF;
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 31px;
+    text-transform: none;
+    max-width: 732px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px){
+    .container{
+        padding: 87px 20px 0 20px;
+    }
+
+}
+@media screen and (max-width: 780px) {
+    .container{
+        padding: 37px 20px 0 20px;
+    }
+.title{
+    text-align: center;
+    font-size: 22px;
+}
+    .text{
+        text-align: center;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .text{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .text{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,69 @@
+.contacts {
+    display: flex;
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 30px;
+    background: linear-gradient(35deg, rgba(85, 60, 117, 0.78) 0%, rgba(92, 142, 170, 0.00) 100%);
+    backdrop-filter: blur(46.5px);
+    transition: opacity 2s ease;
+}
+.contactsTitle h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contacts p{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.storeIcons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.storeIcon {
+    /*margin-left: 12px;*/
+}
+@media screen and (max-width: 780px){
+    .contacts{
+        padding: 35px 30px 30px 30px;
+    }
+    .contactsTitle h1 {
+        font-size: 18px;
+        font-family: Montserrat;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .storeIcons{
+        margin-top: 10px;
+    }
+    .contacts p {
+        font-size: 13px;
+        max-width: 275px;
+
+    }
+    .storeIcon img{
+        width: 124px;
+    }
+}
+@media screen and (max-width: 320px){
+    .storeIcons{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,116 @@
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(15, 33, 60, 1);
+  z-index: -10000;
+}
+
+.gradientTopLeft {
+  position: absolute;
+  width: 1627px;
+  height: 1627px;
+  left: -1450px;
+  top: -1350px;
+
+  background: #147a9e;
+  filter: blur(278.5px);
+}
+.gradientTopRight {
+  position: absolute;
+  width: 500px;
+  height: 1600px;
+  left: 90%;
+  top: -1000px;
+
+  background: #b1358b;
+  filter: blur(200px);
+  transform: rotate(330deg);
+}
+.gradientBotLeft {
+  position: absolute;
+  width: 500px;
+  height: 1900px;
+  left: -100px;
+  top: 800px;
+
+  background: #b1358b;
+  filter: blur(200px);
+  transform: rotate(330deg);
+}
+.gradientBotRight {
+  position: absolute;
+  width: 500px;
+  height: 1800px;
+  left: 90%;
+  top: 600px;
+
+  background: #147a9e;
+  filter: blur(200px);
+  transform: rotate(30deg);
+}
+
+.triangle {
+  position: absolute;
+}
+.mobile {
+  position: absolute;
+  display: none;
+}
+
+.blueDown {
+  top: 160px;
+}
+.blueTop {
+  border: none;
+  right: 0;
+  top: 100px;
+}
+
+.pinkSmallOne {
+  left: 0;
+  top: 1160px;
+}
+.pinkSmallTwo {
+  left: 500px;
+  top: 750px;
+}
+.pinkBig {
+  top: 1395px;
+  right: 80px;
+}
+.pinkBigTransparent {
+  top: 1050px;
+  left: 60px;
+}
+
+.mBlueTop {
+  right: 0;
+}
+.mBlueDown {
+  left: 0;
+  top: 300px;
+}
+.mPinkSmall {
+  bottom: 0;
+}
+.mPinkBig {
+  bottom: 0;
+}
+.mPinkBigFilled {
+  right: 0;
+  bottom: 206px;
+}
+
+@media (max-width: 1400px) {
+  .triangle {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .gradientBotLeft,
+  .gradientBotRight {
+    display: none;
+  }
+}

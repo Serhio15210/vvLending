@@ -1,0 +1,58 @@
+@property --buttonBgStart {
+    syntax: "<color>";
+    initial-value: #ea008c;
+    inherits: false;
+}
+
+@property --buttonBgEnd {
+    syntax: "<color>";
+    initial-value: #ad00b0;
+    inherits: false;
+}
+
+@property --navLiBgStart {
+    syntax: "<color>";
+    initial-value: rgba(234, 0, 140, 0);
+    inherits: false;
+}
+
+@property --navLiBgEnd {
+    syntax: "<color>";
+    initial-value: rgba(15, 33, 60, 0);
+    inherits: false;
+}
+.headerButton {
+    /*width: 180px;*/
+    /*height: 45px;*/
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 14.4px;
+    text-transform: uppercase;
+    border-radius: 59px;
+    border-width: 0px;
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 0px 35px 0px #FA4AE0, 0px 7px 14px 0px rgba(255, 255, 255, 0.24) inset, 0px 0px 5px 0px rgba(255, 255, 255, 0.22) !important;
+
+    background: linear-gradient(
+            86.9deg,
+            var(--buttonBgStart),
+            var(--buttonBgEnd)
+    );
+    transition: --buttonBgStart 1.5s, --buttonBgEnd 1.5s;
+}
+
+.headerButton:hover {
+    --buttonBgStart: #ad00b0;
+    --buttonBgEnd: #ea008c;
+}
+
+@media screen and (max-width: 780px) {
+    .headerButton {
+        padding: 10px 20px;
+    }
+}
